@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(120deg, #c93030, #f7cc24);
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  color: black;
+}
+
+.headbox {
+  box-shadow: black;
+  width: 18rem;
+  font-family: cursive;
+  margin: auto;
+  margin-top: 2.4rem;
+  margin-bottom: 2rem;
+  box-shadow: 0rem 0.4rem 0.5rem 0.1rem;
+  border-radius: 0.5rem;
+}
+
+.mainhead {
+  font-size: 1.8rem;
+  width: 18rem;
+  display: flex;
+  justify-content: center;
+  background-color: whitesmoke;
+  padding: 0.4rem;
+  border-radius: 0.5rem;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  height: 2.2rem;
+  width: 45.2rem;
+  margin: auto;
+}
+
+.task {
+  width: 35rem;
+}
+
+.duedate {
+  width: 8rem;
+}
+
+.todo-button {
+  width: 2.2rem;
+  color: rgb(255, 136, 0);
+  background-color: white;
+}
+
+.todo-button :hover {
+  color: white;
+  background-color: rgb(255, 136, 0);
+}
+
+i {
+  width: 2rem;
+  height: 2rem;
+  padding-top: 0.55rem;
+}
