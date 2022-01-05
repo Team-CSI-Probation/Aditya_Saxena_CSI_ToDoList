@@ -14,15 +14,21 @@
   </head>
   <body>
     <div class="headbox"><h1 class="mainhead">My To Do List</h1></div>
-    <form>
-      <input type="text" class="task" />
+    <form name="myForm" onsubmit="validateForm()" method="post" required>
+      <input type="text" class="task" name="fname" />
       <input type="date" class="duedate" />
       <button class="todo-button" type="submit">
         <i class="fa-solid fa-plus"></i>
       </button>
     </form>
     <div class="todo-container">
-      <ul class="todo-list"></ul>
+      <ul class="todo-list">
+        <!-- <div class="todo">
+          <li></li>
+          <button>delete</button>
+          <button>checked</button>
+        </div> -->
+      </ul>
     </div>
     <script src="./app.js"></script>
   </body>

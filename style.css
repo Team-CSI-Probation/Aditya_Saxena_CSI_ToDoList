@@ -38,6 +38,7 @@ form {
   height: 2.2rem;
   width: 45.2rem;
   margin: auto;
+  margin-bottom: 2rem;
 }
 
 .task {
@@ -50,17 +51,82 @@ form {
 
 .todo-button {
   width: 2.2rem;
-  color: rgb(255, 136, 0);
+  color: #ff6f47;
   background-color: white;
+  border: oldlace;
 }
 
 .todo-button :hover {
   color: white;
-  background-color: rgb(255, 136, 0);
+  background-color: #ff6f47;
 }
 
 i {
   width: 2rem;
   height: 2rem;
   padding-top: 0.55rem;
+}
+
+.todo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-list {
+  min-width: 30%;
+  list-style: none;
+}
+
+.todo {
+  margin: 0.5rem;
+  background: white;
+  color: black;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding-left: 0.4rem; */
+  height: 2rem;
+  transition: all 0.5s ease;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: clip;
+}
+
+.todo li {
+  flex: 1;
+  padding: 1rem;
+}
+
+.delete-btn,
+.complete-btn {
+  background: #ff6f47;
+  color: white;
+  border: none;
+  height: 2rem;
+}
+
+.delete-btn:hover {
+  background-color: red;
+}
+
+.complete-btn:hover {
+  background-color: green;
+}
+
+.fa-trash,
+.fa-check {
+  pointer-events: none;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.fall {
+  transform: translateY(8rem) rotateZ(20deg);
+  opacity: 0;
+  transition: 1s;
 }
