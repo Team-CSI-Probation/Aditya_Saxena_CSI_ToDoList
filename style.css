@@ -7,7 +7,7 @@
 body {
   background-image: linear-gradient(120deg, #c93030, #f7cc24);
   font-family: Arial, Helvetica, sans-serif;
-  min-height: 100vh;
+  min-height: 94.7vh;
   color: black;
 }
 
@@ -28,15 +28,17 @@ body {
   display: flex;
   justify-content: center;
   background-color: whitesmoke;
-  padding: 0.4rem;
+  padding: 0.05rem;
   border-radius: 0.5rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: clip;
 }
 
 form {
   display: flex;
   justify-content: center;
-  height: 2.2rem;
-  width: 45.2rem;
+  width: 60vw;
   margin: auto;
   margin-bottom: 2rem;
 }
@@ -86,17 +88,21 @@ i {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* padding-left: 0.4rem; */
   height: 2rem;
   transition: all 0.5s ease;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: clip;
+  min-width: 30vw;
 }
 
 .todo li {
   flex: 1;
   padding: 1rem;
+}
+
+.todo-date {
+  text-align: right;
 }
 
 .delete-btn,
@@ -127,6 +133,11 @@ i {
 
 .fall {
   transform: translateY(8rem) rotateZ(20deg);
-  opacity: 0;
   transition: 1s;
+}
+
+@media only screen and (max-width: 723px) {
+  html {
+    font-size: 60%;
+  }
 }

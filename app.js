@@ -3,16 +3,9 @@ const taskdate=document.querySelector(".duedate");
 const todobutton=document.querySelector(".todo-button");
 const todolist=document.querySelector(".todo-list");
 
+
 todobutton.addEventListener('click',addtodo);
 todolist.addEventListener('click',deleteCheck);
-
-function validateForm() {
-    var x = document.forms["myForm"]["fname"].value;
-    if (x == "" || x == null) {
-      alert("Name must be filled out");
-      return false;
-    }
-  }
 
 function addtodo(event){
     event.preventDefault();
@@ -34,6 +27,7 @@ function addtodo(event){
     checkbutton.innerHTML='<i class="fas fa-check"></i>';
     checkbutton.classList.add("complete-btn");
     tododiv.appendChild(checkbutton);
+    const count=0;
     
     const deletebutton=document.createElement("button");
     deletebutton.innerHTML='<i class="fas fa-trash"></i>';
@@ -52,13 +46,15 @@ function deleteCheck(e){
     if(item.classList[0]==="delete-btn"){
         const todo= item.parentElement;
         todo.classList.add("fall");
+        todo.style.opacity=0;
         todo.addEventListener('transitionend', function(){
             todo.remove();
         })
     }
 
     if(item.classList[0]==="complete-btn"){
-        const todo= item.parentElement;
-        todo.classList.toggle("completed");
+            const todo= item.parentElement;
+            todo.style.textDecoration="line-through";
+            todo.style.opacity="0.5";  
     }
 }
