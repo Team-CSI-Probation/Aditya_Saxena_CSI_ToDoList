@@ -27,7 +27,6 @@ function addtodo(event){
     checkbutton.innerHTML='<i class="fas fa-check"></i>';
     checkbutton.classList.add("complete-btn");
     tododiv.appendChild(checkbutton);
-    const count=0;
     
     const deletebutton=document.createElement("button");
     deletebutton.innerHTML='<i class="fas fa-trash"></i>';

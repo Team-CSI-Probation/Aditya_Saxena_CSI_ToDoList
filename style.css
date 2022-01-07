@@ -126,11 +126,6 @@ i {
   pointer-events: none;
 }
 
-.completed {
-  text-decoration: line-through;
-  opacity: 0.5;
-}
-
 .fall {
   transform: translateY(8rem) rotateZ(20deg);
   transition: 1s;
